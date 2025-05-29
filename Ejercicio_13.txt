@@ -1,0 +1,14 @@
+int main(){
+	int num1;
+	int num2;
+	int resultado;
+	cout<<"Ingrese el primer numero para su multiplicacion"<<endl;
+	cin>>num1;
+	cout<<"Ingrese el segundo numero para su multiplicacion"<<endl;
+	cin>>num2;
+	for (int i=1;i<=num2;i++){
+		resultado=resultado+num1;
+	}
+	cout<<"El resultado de la multiplicacion es: "<<resultado<<endl;
+	return 0;
+}
