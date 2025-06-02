@@ -2,17 +2,25 @@
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Ingrese la cantidad de múltiplos de 7 que desea ver: ";
+    int n, suma = 0;
+
+    cout << "Ingresa cuantos multiplos de 7 deseas ver: ";
     cin >> n;
+
     if (n <= 0) {
-        cout << "Por favor ingrese un número mayor que cero." << endl;
+        cout << "Por favor ingresa un numero positivo mayor que cero." << endl;
         return 1;
     }
-    cout << "Los primeros " << n << " múltiplos de 7 son:" << endl;
+
+    cout << "Los primeros " << n << " multiplos de 7 son:" << endl;
+
     for (int i = 1; i <= n; i++) {
-        cout << (i * 7) << " ";
+        int multiplo = i * 7;
+        cout << multiplo << " ";
+        suma += multiplo;
     }
-    cout << endl;
+
+    cout << endl << "La suma de los multiplos es: " << suma << endl;
+
     return 0;
 }
