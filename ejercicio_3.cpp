@@ -6,6 +6,7 @@ int main() {
 
     cout << "Ingrese un numero natural N: ";
     cin >> N;
+    //Mejora de validacion en los numeros naturales
 
     if (N <= 0) {
         cout << "Debe ingresar un numero natural mayor que cero." << endl;
